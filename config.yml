@@ -1,0 +1,54 @@
+tables:
+  browsertime:
+    website_dependent: True
+    columns:
+      pageLoadTime: INTEGER
+      speedIndex: INTEGER
+  speedtest:
+    website_dependent: False
+    columns:
+      downloadSpeed: REAL
+      uploadSpeed: REAL
+      ping: INTEGER
+  bulkTest:
+    website_dependent: False
+    columns:
+      downloadSpeed: REAL
+
+metrics:
+  plt:
+    table: browsertime
+    name: Page Load Time
+    name_short: PLT
+    column: pageLoadTime
+    unit: ms
+  si:
+    table: browsertime
+    name: Speed Index
+    name_short: SI
+    column: speedIndex
+    unit: ms
+  ping:
+    table: speedtest
+    name: Latency
+    name_short: Latency
+    column: ping
+    unit: ms
+  download:
+    table: speedtest
+    name: Download Speed
+    name_short: Download
+    column: downloadSpeed
+    unit: Mbps
+  upload:
+    table: speedtest
+    name: Upload Speed
+    name_short: Upload
+    column: uploadSpeed
+    unit: Mbps
+  bulkdownload:
+    table: bulkTest
+    name: Bulk-download Speed
+    name_short: Bulk Download
+    column: downloadSpeed
+    unit: Mbps

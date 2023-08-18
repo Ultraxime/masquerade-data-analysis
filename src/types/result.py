@@ -1,33 +1,84 @@
+# -*- coding: utf-8 -*-
+# @Author: Ultraxime
+# @Last Modified by:   Ultraxime
+# @Last Modified time: 2023-08-18 16:26:07
+#
+# This file is part of Masquerade Data Analysis.
+#
+# Masquerade Data Analysis is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation, either version 3 of the License, or any later version.
+#
+# Masquerade Data Analysis is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty
+# of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Masquerade Data Analysis. If not, see <https://www.gnu.org/licenses/>.
 """
-Base class for the results
+Base classes for the results
 """
-
 import os
 import time
+from abc import ABC
+from abc import abstractmethod
+from typing import Any
+from typing import Dict
+from typing import List
+from typing import Optional
 
-from typing import List, Iterable, Optional
-
-import yaml
 import matplotlib.pyplot as plt
+import yaml
+
+# pylint: disable=R0903
+class Run(ABC):
+    """
+    This class describes a run.
+    """
+    _content: Any
+
+    def __init__(self, content: Any):
+        self._content = content
+
+    @abstractmethod
+    def get_metric(self, metric: str):
+        """
+        Gets the metric.
+
+        :param      metric:  The metric
+        :type       metric:  str
+        """
+        raise NotImplementedError
 
 
-class Result:
+class Result(ABC):
     """
     This class describes the result of an experiment
     """
-    _native: List
-    _masquerade: List
-    _squid: List
+    _native: List[Run] | Dict[Any, Run]
+    _masquerade: List[Run] | Dict[Any, Run]
+    _squid: List[Run] | Dict[Any, Run]
 
-    def __init__(self, folder: str = ".", name: str = "",
-                 _native: Optional[List] = None,
-                 _masquerade: Optional[List] = None,
-                 _squid: Optional[List] = None):
+    @abstractmethod
+    def __init__(self, folder: str, name: str,
+                 run_constructor: type,
+                 _native: Optional[List | Dict] = None,
+                 _masquerade: Optional[List | Dict] = None,
+                 _squid: Optional[List | Dict] = None):
+        assert issubclass(run_constructor, Run)
         if _native is not None and _masquerade is not None and _squid is not None:
-            self._native = _native
-            self._masquerade = _masquerade
-            self._squid = _squid
-            return
+            if isinstance(_native, list):
+                self._native = [run_constructor(run) for run in _native]
+                self._masquerade = [run_constructor(run) for run in _masquerade]
+                self._squid = [run_constructor(run) for run in _squid]
+                return
+            if (isinstance(_native, dict) and isinstance(_masquerade, dict)
+                and isinstance(_squid, dict)):
+                self._native = {key: run_constructor(run) for key, run in _native.items()}
+                self._masquerade = {key: run_constructor(run) for key, run in _masquerade.items()}
+                self._squid = {key: run_constructor(run) for key, run in _squid.items()}
+                return
 
         content = None
         for file in os.scandir(folder):
@@ -41,19 +92,28 @@ class Result:
             self._native = []
             return
 
-        self._masquerade = content["proxy-masquerade"]
-        self._squid = content["proxy-squid"]
-        self._native = content["native"]
+        try:
+            self._masquerade = [run_constructor(run) for run in content["proxy-masquerade"]]
+        except KeyError:
+            self._masquerade = []
+        try:
+            self._squid = [run_constructor(run) for run in content["proxy-squid"]]
+        except KeyError:
+            self._squid = []
+        try:
+            self._native = [run_constructor(run) for run in content["native"]]
+        except KeyError:
+            self._native = []
 
-    def develop(self, field: Iterable, convert) -> List:
+    def develop(self, field: List[Run] | Dict[Any, Run], convert) -> List:
         """
         Convert a set of test's results in one sorted list
-        
+
         :param      field:    The field
-        :type       field:    Iterable
+        :type       field:    List[Run] | Dict[Any, Run]
         :param      convert:  The convert
         :type       convert:  Any -> List
-        
+
         :returns:   the sorted list
         :rtype:     List
         """
@@ -129,7 +189,7 @@ class Result:
         """
         self.subplot(type(self).__name__)
 
-    def get_field(self, field: str) -> List:
+    def get_field(self, field: str) -> List[Run] | Dict[Any, Run]:
         """
         Gets the field.
 
@@ -148,4 +208,12 @@ class Result:
                 return self._squid
             case _:
                 raise ValueError
-    
+
+    def get_fields(self) -> List[str]:
+        """
+        Gets the fields.
+
+        :returns:   The fields.
+        :rtype:     str list
+        """
+        return ["native", "masquerade", "squid"]

@@ -1,26 +1,53 @@
+# -*- coding: utf-8 -*-
+# @Author: Ultraxime
+# @Last Modified by:   Ultraxime
+# @Last Modified time: 2023-08-18 13:19:34
+#
+# This file is part of Masquerade Data Analysis.
+#
+# Masquerade Data Analysis is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation, either version 3 of the License, or any later version.
+#
+# Masquerade Data Analysis is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty
+# of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Masquerade Data Analysis. If not, see <https://www.gnu.org/licenses/>.
 """
 Module for the browsertime results
 """
-
 import json
 import os
 import time
-
-from typing import List, Dict, Optional
+from typing import Dict
+from typing import List
+from typing import Optional
 
 import yaml
 
+from .result import Result
+from .result import Run
 
-class Report:
+
+class Report(Run):
     """
     This class describes the result of one run of browsertime.
     """
     _page_load_time: List[int]
     _speed_index: List[int]
 
-    def __init__(self, filename: str = "",
+    def __init__(self, old_self = None,
+                 filename: str = "",
                  _page_load_time: Optional[List] = None,
                  _speed_index: Optional[List] = None):
+        super().__init__(None)
+        if old_self:
+            self._page_load_time = old_self._page_load_time
+            self._speed_index = old_self._speed_index
+            return
         if _page_load_time is not None and _speed_index is not None:
             self._page_load_time = _page_load_time
             self._speed_index = _speed_index
@@ -58,8 +85,20 @@ class Report:
         """
         return self._speed_index
 
+    def get_metric(self, metric: str):
+        match metric.lower():
+            case "plt":
+                return [plt for plt in self.get_page_load_time() if plt != 0]
+            case "si":
+                return [si for si in self.get_speed_index() if si != 0]
+            case _:
+                raise ValueError
 
-class BrowserTime:
+
+
+
+
+class BrowserTime(Result):
     """
     This class describes the result of one run of the browsertime experiment.
     """
@@ -67,14 +106,13 @@ class BrowserTime:
     _masquerade: Dict[str, Report]
     _squid: Dict[str, Report]
 
-    def __init__(self, folder: str = ".",
+    def __init__(self, folder: str = ".", run_constructor=Report,
                  _native: Optional[Dict] = None,
                  _masquerade: Optional[Dict] = None,
                  _squid: Optional[Dict] = None):
         if _native is not None and _masquerade is not None and _squid is not None:
-            self._native = _native
-            self._masquerade = _masquerade
-            self._squid = _squid
+            # pylint: disable=C0301
+            super().__init__(folder, "", run_constructor, _native=_native, _masquerade=_masquerade, _squid=_squid) # pyright: ignore[reportGeneralTypeIssues]
             return
 
         self._native = {}
@@ -84,11 +122,11 @@ class BrowserTime:
         for website in os.scandir(folder):
             if website.name not in ("archives", "results") and website.is_dir():
                 attempts = list(os.scandir(website.path))
-                assert len(attempts) == 3
-                attempts.sort(key=lambda f: f.path)
-                self._native[website.name] = Report(attempts[0].path)
-                self._masquerade[website.name] = Report(attempts[1].path)
-                self._squid[website.name] = Report(attempts[2].path)
+                if len(attempts) == 3:
+                    attempts.sort(key=lambda f: f.path)
+                    self._native[website.name] = run_constructor(filename=attempts[0].path)
+                    self._masquerade[website.name] = run_constructor(filename=attempts[1].path)
+                    self._squid[website.name] = run_constructor(filename=attempts[2].path)
 
     def save(self):
         """
@@ -101,7 +139,7 @@ class BrowserTime:
     def get_page_load_time(self) -> Dict[str, List[int]]:
         """
         Gets the page load time.
-        
+
         :returns:   The page load time.
         :rtype:     str * (int List) dict
         """
@@ -121,7 +159,7 @@ class BrowserTime:
     def get_speed_index(self) -> Dict[str, List[int]]:
         """
         Gets the speed index.
-        
+
         :returns:   The speed index.
         :rtype:     str * (int List) dict
         """
@@ -137,23 +175,3 @@ class BrowserTime:
                 res["masquerade"].extend(self._masquerade[website].get_speed_index()[:count])
                 res["squid"].extend(self._squid[website].get_speed_index()[:count])
         return res
-
-    def get_field(self, field: str) -> Dict[str, Report]:
-        """
-        Gets the field.
-        
-        :param      field:  The field
-        :type       field:  str
-        
-        :returns:   The field.
-        :rtype:     Dict[str, Report]
-        """
-        match field:
-            case "native":
-                return self._native
-            case "masquerade":
-                return self._masquerade
-            case "squid":
-                return self._squid
-            case _:
-                raise ValueError

@@ -1,4 +1,36 @@
+
 repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+        exclude: "(.*).pem"
+#      - id: check-yaml
+      - id: check-json
+      - id: mixed-line-ending
+        exclude: "(.*).pem"
+        args: ['--fix=lf']
+        description: Forces to replace line ending by the UNIX 'lf' character.
+      - id: pretty-format-json
+        args: ['--no-sort-keys', '--autofix']
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: requirements-txt-fixer
+
+
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v3.10.0
+    hooks:
+      - id: reorder-python-imports
+
+  - repo: https://github.com/detailyang/pre-commit-shell
+    rev: v1.0.6
+    hooks:
+      - id: shell-lint
+#        args: [--format=json]
+
   - repo: local
     hooks:
       - id: pylint
@@ -6,8 +38,15 @@ repos:
         entry: pylint
         language: system
         types: [python]
+        args: ['--max-parents=12']
       - id: pyright
         name: pyright
         entry: pyright
         language: system
         types: [python]
+      - id: hadolint-docker
+        name: Lint Dockerfiles
+        description: Runs hadolint Docker image to lint Dockerfiles
+        language: docker_image
+        types: ["dockerfile"]
+        entry: ghcr.io/hadolint/hadolint hadolint

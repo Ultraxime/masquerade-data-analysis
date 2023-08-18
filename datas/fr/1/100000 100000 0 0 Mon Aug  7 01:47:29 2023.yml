@@ -1,0 +1,3138 @@
+browsertime: !!python/object:browsertime.BrowserTime
+  _masquerade:
+    www.20minutes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1358
+      - 1397
+      - 1356
+      _speed_index:
+      - 1042
+      - 1108
+      - 1043
+    www.actu.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 825
+      - 827
+      - 885
+      _speed_index:
+      - 806
+      - 809
+      - 774
+    www.aliexpress.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1552
+      - 1583
+      - 3075
+      _speed_index:
+      - 634
+      - 642
+      - 2246
+    www.allocine.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 597
+      - 606
+      - 624
+      _speed_index:
+      - 450
+      - 467
+      - 493
+    www.amazon.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1788
+      - 2527
+      - 2560
+      _speed_index:
+      - 1315
+      - 1873
+      - 1485
+    www.ameli.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 359
+      - 353
+      - 332
+      _speed_index:
+      - 635
+      - 640
+      - 639
+    www.bfmtv.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1002
+      - 1162
+      - 1725
+      _speed_index:
+      - 818
+      - 961
+      - 1336
+    www.bing.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 252
+      - 268
+      - 293
+      _speed_index:
+      - 581
+      - 636
+      - 651
+    www.blogoman-24.com: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.bongacams.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2805
+      - 2899
+      - 2863
+      _speed_index:
+      - 960
+      - 928
+      - 995
+    www.boursorama.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1739
+      - 1437
+      - 2422
+      _speed_index:
+      - 1310
+      - 1020
+      - 2016
+    www.bouyguestelecom.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1900
+      - 1649
+      - 1730
+      _speed_index:
+      - 1939
+      - 1855
+      - 1582
+    www.caf.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 730
+      - 750
+      - 752
+      _speed_index:
+      - 797
+      - 847
+      - 864
+    www.caisse-epargne.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1254
+      - 1390
+      - 1240
+      _speed_index:
+      - 1522
+      - 1419
+      - 1493
+    www.canalplus.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 22676
+      - 22636
+      - 725
+      _speed_index:
+      - 17939
+      - 14641
+      - 1639
+    www.cdiscount.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1936
+      - 3086
+      - 3260
+      _speed_index:
+      - 1523
+      - 1669
+      - 1836
+    www.credit-agricole.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1252
+      - 1314
+      - 1113
+      _speed_index:
+      - 1796
+      - 2437
+      - 2343
+    www.creditmutuel.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1068
+      - 1101
+      - 1072
+      _speed_index:
+      - 1164
+      - 1186
+      - 1184
+    www.cuisineaz.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1052
+      - 1014
+      - 912
+      _speed_index:
+      - 907
+      - 869
+      - 749
+    www.dealabs.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1246
+      - 1302
+      - 1217
+      _speed_index:
+      - 1350
+      - 1377
+      - 1301
+    www.doctissimo.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1636
+      - 1388
+      - 1375
+      _speed_index:
+      - 1401
+      - 1219
+      - 1118
+    www.doctolib.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1508
+      - 1479
+      - 1982
+      _speed_index:
+      - 1556
+      - 1400
+      - 1832
+    www.duckduckgo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 994
+      - 1276
+      - 2475
+      _speed_index:
+      - 633
+      - 666
+      - 600
+    www.ebay.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 5111
+      - 6952
+      - 5008
+      _speed_index:
+      - 6427
+      - 7076
+      - 6403
+    www.ecosia.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 697
+      - 679
+      - 746
+      _speed_index:
+      - 610
+      - 618
+      - 657
+    www.facebook.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 687
+      - 674
+      - 645
+      _speed_index:
+      - 649
+      - 611
+      - 611
+    www.femmeactuelle.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 504
+      - 487
+      - 583
+      _speed_index:
+      - 936
+      - 934
+      - 907
+    www.fnac.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 840
+      - 799
+      - 887
+      _speed_index:
+      - 933
+      - 1001
+      - 933
+    www.footmercato.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 597
+      - 638
+      - 604
+      _speed_index:
+      - 619
+      - 650
+      - 619
+    www.france.tv: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1249
+      - 1140
+      - 1296
+      _speed_index:
+      - 888
+      - 858
+      - 925
+    www.francetvinfo.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 997
+      - 981
+      - 981
+      _speed_index:
+      - 747
+      - 738
+      - 767
+    www.free.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 831
+      - 985
+      - 896
+      _speed_index:
+      - 675
+      - 763
+      - 750
+    www.gala.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 595
+      - 640
+      - 608
+      _speed_index:
+      - 1063
+      - 1102
+      - 986
+    www.google.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 454
+      - 455
+      - 413
+      _speed_index:
+      - 267
+      - 300
+      - 300
+    www.google.com.br: !!python/object:browsertime.Report
+      _page_load_time:
+      - 414
+      - 503
+      - 432
+      _speed_index:
+      - 267
+      - 300
+      - 266
+    www.google.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 413
+      - 399
+      - 506
+      _speed_index:
+      - 266
+      - 266
+      - 300
+    www.heureporno.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 225
+      - 213
+      - 185
+      _speed_index:
+      - 345
+      - 320
+      - 307
+    www.impots.gouv.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 506
+      - 496
+      - 506
+      _speed_index:
+      - 427
+      - 399
+      - 394
+    www.indeed.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 582
+      - 538
+      - 571
+      _speed_index:
+      - 1057
+      - 877
+      - 931
+    www.index-education.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1430
+      - 1598
+      - 1895
+      _speed_index:
+      - 1411
+      - 1508
+      - 1643
+    www.instagram.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 947
+      - 1109
+      - 1845
+      _speed_index:
+      - 1718
+      - 1523
+      - 1615
+    www.interieur.gouv.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 4459
+      - 4416
+      - 4364
+      _speed_index:
+      - 1093
+      - 1165
+      - 1145
+    www.jeuxvideo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1367
+      - 1374
+      - 1309
+      _speed_index:
+      - 1124
+      - 1114
+      - 1069
+    www.journaldesfemmes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1104
+      - 1097
+      - 1088
+      _speed_index:
+      - 1161
+      - 1161
+      - 1217
+    www.labanquepostale.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 774
+      - 730
+      - 815
+      _speed_index:
+      - 642
+      - 619
+      - 686
+    www.ladepeche.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 975
+      - 972
+      - 1103
+      _speed_index:
+      - 756
+      - 727
+      - 848
+    www.laposte.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1563
+      - 1543
+      - 1584
+      _speed_index:
+      - 1937
+      - 1833
+      - 1900
+    www.laposte.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1804
+      - 1687
+      - 1810
+      _speed_index:
+      - 2173
+      - 1989
+      - 2130
+    www.lci.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 4065
+      - 2939
+      - 4168
+      _speed_index:
+      - 4933
+      - 2966
+      - 2769
+    www.leboncoin.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 4425
+      - 4450
+      - 4257
+      _speed_index:
+      - 3122
+      - 3149
+      - 2833
+    www.lefigaro.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1607
+      - 1672
+      - 1693
+      _speed_index:
+      - 887
+      - 978
+      - 923
+    www.lemonde.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 790
+      - 644
+      - 790
+      _speed_index:
+      - 751
+      - 842
+      - 784
+    www.leparisien.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1797
+      - 1870
+      - 1846
+      _speed_index:
+      - 1337
+      - 1416
+      - 1397
+    www.lequipe.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1652
+      - 1746
+      - 1723
+      _speed_index:
+      - 676
+      - 723
+      - 736
+    www.leroymerlin.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 504
+      - 514
+      - 498
+      _speed_index:
+      - 600
+      - 600
+      - 600
+    www.linkedin.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 736
+      - 725
+      - 237
+      _speed_index:
+      - 869
+      - 885
+      - 0
+    www.linternaute.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1223
+      - 1196
+      - 1152
+      _speed_index:
+      - 1165
+      - 1181
+      - 1189
+    www.live.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 60384
+      - 60508
+      - 60594
+      _speed_index:
+      - 711
+      - 831
+      - 1018
+    www.marmiton.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1006
+      - 1049
+      - 1074
+      _speed_index:
+      - 849
+      - 903
+      - 911
+    www.meteociel.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 638
+      - 691
+      - 647
+      _speed_index:
+      - 553
+      - 512
+      - 551
+    www.meteofrance.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2657
+      - 2662
+      - 2465
+      _speed_index:
+      - 2027
+      - 2710
+      - 2422
+    www.microsoft.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1438
+      - 1341
+      - 1623
+      _speed_index:
+      - 5215
+      - 5096
+      - 5302
+    www.msn.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1056
+      - 5728
+      - 1034
+      _speed_index:
+      - 2094
+      - 2528
+      - 2149
+    www.netflix.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1377
+      - 1602
+      - 1427
+      _speed_index:
+      - 1126
+      - 883
+      - 714
+    www.news.google.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 548
+      - 544
+      - 531
+      _speed_index:
+      - 373
+      - 403
+      - 342
+    www.office.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 9789
+      - 9792
+      - 5212
+      _speed_index:
+      - 6374
+      - 6395
+      - 3895
+    www.ohmymag.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 498
+      - 468
+      - 460
+      _speed_index:
+      - 1031
+      - 1007
+      - 974
+    www.orange.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 30480
+      - 396
+      - 512
+      _speed_index:
+      - 1386
+      - 1372
+      - 1510
+    www.ouest-france.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1350
+      - 1928
+      - 62474
+      _speed_index:
+      - 1175
+      - 1561
+      - 62200
+    www.outbrain.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1151
+      - 1222
+      - 1178
+      _speed_index:
+      - 1015
+      - 1094
+      - 942
+    www.pagesjaunes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1047
+      - 1013
+      - 988
+      _speed_index:
+      - 817
+      - 798
+      - 748
+    www.paypal.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1102
+      - 1263
+      - 1149
+      _speed_index:
+      - 784
+      - 889
+      - 849
+    www.pinterest.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 577
+      - 612
+      - 639
+      _speed_index:
+      - 2636
+      - 6606
+      - 2743
+    www.pole-emploi.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 853
+      - 862
+      - 862
+      _speed_index:
+      - 999
+      - 997
+      - 1016
+    www.pornhub.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 50115
+      - 816
+      - 674
+      _speed_index:
+      - 50133
+      - 711
+      - 678
+    www.programme-tv.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 675
+      - 672
+      - 639
+      _speed_index:
+      - 1053
+      - 1025
+      - 1082
+    www.purepeople.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 958
+      - 933
+      - 912
+      _speed_index:
+      - 352
+      - 332
+      - 320
+    www.qwant.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 653
+      - 658
+      - 743
+      _speed_index:
+      - 406
+      - 343
+      - 472
+    www.reddit.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1617
+      - 1753
+      - 1744
+      _speed_index:
+      - 962
+      - 927
+      - 946
+    www.seloger.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1055
+      - 1080
+      - 1196
+      _speed_index:
+      - 649
+      - 658
+      - 707
+    www.service-public.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 798
+      - 802
+      - 865
+      _speed_index:
+      - 489
+      - 512
+      - 683
+    www.sfr.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 460
+      - 446
+      - 447
+      _speed_index:
+      - 2183
+      - 2158
+      - 2149
+    www.sudouest.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1933
+      - 1927
+      - 1538
+      _speed_index:
+      - 538
+      - 541
+      - 587
+    www.taboola.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2063
+      - 10635
+      - 1408
+      _speed_index:
+      - 5995
+      - 11529
+      - 5850
+    www.tf1.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2537
+      - 2636
+      - 2640
+      _speed_index:
+      - 1473
+      - 1583
+      - 1590
+    www.twitch.tv: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2729
+      - 3137
+      - 2746
+      _speed_index:
+      - 2205
+      - 2369
+      - 2389
+    www.twitter.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1895
+      - 1889
+      - 1862
+      _speed_index:
+      - 1574
+      - 1664
+      - 1575
+    www.vinted.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 4946
+      - 5096
+      - 4868
+      _speed_index:
+      - 4588
+      - 4752
+      - 4497
+    www.voici.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 618
+      - 669
+      - 663
+      _speed_index:
+      - 1035
+      - 1095
+      - 1158
+    www.whatsapp.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1013
+      - 991
+      - 1074
+      _speed_index:
+      - 991
+      - 996
+      - 1064
+    www.wikipedia.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 304
+      - 296
+      - 325
+      _speed_index:
+      - 277
+      - 310
+      - 300
+    www.wlp-acs.com: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.xhamster.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2625
+      - 3085
+      - 1994
+      _speed_index:
+      - 2001
+      - 2350
+      - 1336
+    www.xnxx.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 687
+      - 777
+      - 704
+      _speed_index:
+      - 522
+      - 491
+      - 523
+    www.xvideos.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 857
+      - 852
+      - 834
+      _speed_index:
+      - 561
+      - 519
+      - 524
+    www.yahoo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 665
+      - 642
+      - 634
+      _speed_index:
+      - 647
+      - 666
+      - 613
+    www.youporn.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 692
+      - 609
+      - 622
+      _speed_index:
+      - 770
+      - 683
+      - 693
+    www.youtu.be: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.youtube.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 3038
+      - 3526
+      - 2801
+      _speed_index:
+      - 3093
+      - 2708
+      - 2668
+    www.zoom.us: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1578
+      - 1623
+      - 1562
+      _speed_index:
+      - 2406
+      - 2401
+      - 2397
+  _native:
+    www.20minutes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1212
+      - 1255
+      - 1252
+      _speed_index:
+      - 1010
+      - 943
+      - 1012
+    www.actu.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 751
+      - 697
+      - 724
+      _speed_index:
+      - 644
+      - 675
+      - 706
+    www.aliexpress.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2034
+      - 2095
+      - 2113
+      _speed_index:
+      - 1663
+      - 1671
+      - 1729
+    www.allocine.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 505
+      - 494
+      - 512
+      _speed_index:
+      - 360
+      - 392
+      - 383
+    www.amazon.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1353
+      - 1268
+      - 1433
+      _speed_index:
+      - 969
+      - 961
+      - 924
+    www.ameli.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 331
+      - 320
+      - 355
+      _speed_index:
+      - 590
+      - 602
+      - 623
+    www.bfmtv.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 884
+      - 923
+      - 914
+      _speed_index:
+      - 693
+      - 731
+      - 731
+    www.bing.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 240
+      - 193
+      - 209
+      _speed_index:
+      - 605
+      - 580
+      - 593
+    www.blogoman-24.com: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.bongacams.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1715
+      - 1722
+      - 1722
+      _speed_index:
+      - 735
+      - 712
+      - 776
+    www.boursorama.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1224
+      - 1447
+      - 1603
+      _speed_index:
+      - 844
+      - 1038
+      - 1208
+    www.bouyguestelecom.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1519
+      - 1924
+      - 1466
+      _speed_index:
+      - 1916
+      - 1919
+      - 1080
+    www.caf.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 575
+      - 577
+      - 584
+      _speed_index:
+      - 701
+      - 683
+      - 703
+    www.caisse-epargne.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1199
+      - 1151
+      - 1155
+      _speed_index:
+      - 1496
+      - 1421
+      - 1441
+    www.canalplus.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2373
+      - 2383
+      - 1540
+      _speed_index:
+      - 2034
+      - 2133
+      - 1828
+    www.cdiscount.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1833
+      - 2023
+      - 1825
+      _speed_index:
+      - 1343
+      - 1469
+      - 1353
+    www.credit-agricole.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 854
+      - 895
+      - 889
+      _speed_index:
+      - 1916
+      - 1848
+      - 1832
+    www.creditmutuel.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 844
+      - 862
+      - 839
+      _speed_index:
+      - 992
+      - 1024
+      - 953
+    www.cuisineaz.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 729
+      - 712
+      - 704
+      _speed_index:
+      - 627
+      - 628
+      - 625
+    www.dealabs.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1429
+      - 1558
+      - 1404
+      _speed_index:
+      - 1489
+      - 1611
+      - 1456
+    www.doctissimo.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1119
+      - 1167
+      - 1197
+      _speed_index:
+      - 1060
+      - 1130
+      - 1107
+    www.doctolib.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1291
+      - 1301
+      - 1312
+      _speed_index:
+      - 1311
+      - 1345
+      - 1364
+    www.duckduckgo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 576
+      - 568
+      - 594
+      _speed_index:
+      - 467
+      - 466
+      - 501
+    www.ebay.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1205
+      - 1160
+      - 1160
+      _speed_index:
+      - 3770
+      - 3713
+      - 3761
+    www.ecosia.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 626
+      - 640
+      - 640
+      _speed_index:
+      - 556
+      - 574
+      - 551
+    www.facebook.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 565
+      - 563
+      - 590
+      _speed_index:
+      - 518
+      - 518
+      - 553
+    www.femmeactuelle.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 443
+      - 444
+      - 444
+      _speed_index:
+      - 848
+      - 773
+      - 777
+    www.fnac.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 773
+      - 546
+      - 614
+      _speed_index:
+      - 1000
+      - 800
+      - 901
+    www.footmercato.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 533
+      - 528
+      - 516
+      _speed_index:
+      - 552
+      - 550
+      - 550
+    www.france.tv: !!python/object:browsertime.Report
+      _page_load_time:
+      - 996
+      - 1053
+      - 1084
+      _speed_index:
+      - 788
+      - 798
+      - 822
+    www.francetvinfo.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 817
+      - 929
+      - 856
+      _speed_index:
+      - 661
+      - 737
+      - 682
+    www.free.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 754
+      - 933
+      - 742
+      _speed_index:
+      - 623
+      - 790
+      - 608
+    www.gala.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 504
+      - 508
+      - 511
+      _speed_index:
+      - 942
+      - 872
+      - 815
+    www.google.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 401
+      - 2193
+      - 400
+      _speed_index:
+      - 266
+      - 266
+      - 233
+    www.google.com.br: !!python/object:browsertime.Report
+      _page_load_time:
+      - 365
+      - 369
+      - 400
+      _speed_index:
+      - 233
+      - 233
+      - 233
+    www.google.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 360
+      - 433
+      - 430
+      _speed_index:
+      - 233
+      - 300
+      - 300
+    www.heureporno.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 206
+      - 161
+      - 230
+      _speed_index:
+      - 304
+      - 271
+      - 337
+    www.impots.gouv.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 309
+      - 294
+      - 317
+      _speed_index:
+      - 301
+      - 267
+      - 300
+    www.indeed.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 720
+      - 766
+      - 690
+      _speed_index:
+      - 775
+      - 788
+      - 745
+    www.index-education.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1061
+      - 1452
+      - 1438
+      _speed_index:
+      - 1036
+      - 1437
+      - 1401
+    www.instagram.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 726
+      - 987
+      - 970
+      _speed_index:
+      - 1424
+      - 1450
+      - 1454
+    www.interieur.gouv.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 682
+      - 667
+      - 662
+      _speed_index:
+      - 355
+      - 381
+      - 384
+    www.jeuxvideo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1210
+      - 1255
+      - 1245
+      _speed_index:
+      - 965
+      - 1029
+      - 1023
+    www.journaldesfemmes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1240
+      - 1125
+      - 1192
+      _speed_index:
+      - 1142
+      - 1047
+      - 1093
+    www.labanquepostale.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 650
+      - 698
+      - 716
+      _speed_index:
+      - 570
+      - 650
+      - 642
+    www.ladepeche.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 848
+      - 855
+      - 883
+      _speed_index:
+      - 690
+      - 714
+      - 714
+    www.laposte.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1400
+      - 1404
+      - 0
+      _speed_index:
+      - 1739
+      - 1695
+      - 1189
+    www.laposte.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1517
+      - 1461
+      - 2064
+      _speed_index:
+      - 1797
+      - 1755
+      - 2360
+    www.lci.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1360
+      - 1011
+      - 1305
+      _speed_index:
+      - 1749
+      - 1910
+      - 1838
+    www.leboncoin.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 3968
+      - 4075
+      - 4124
+      _speed_index:
+      - 2762
+      - 2802
+      - 2740
+    www.lefigaro.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1648
+      - 1550
+      - 1572
+      _speed_index:
+      - 816
+      - 825
+      - 902
+    www.lemonde.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 790
+      - 801
+      - 756
+      _speed_index:
+      - 749
+      - 749
+      - 718
+    www.leparisien.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1714
+      - 1765
+      - 1580
+      _speed_index:
+      - 1339
+      - 1363
+      - 1231
+    www.lequipe.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1547
+      - 1623
+      - 1587
+      _speed_index:
+      - 616
+      - 646
+      - 602
+    www.leroymerlin.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 382
+      - 376
+      - 331
+      _speed_index:
+      - 977
+      - 600
+      - 600
+    www.linkedin.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 219
+      - 565
+      - 359
+      _speed_index:
+      - 0
+      - 692
+      - 0
+    www.linternaute.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1036
+      - 1003
+      - 966
+      _speed_index:
+      - 980
+      - 966
+      - 953
+    www.live.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 579
+      - 596
+      - 534
+      _speed_index:
+      - 460
+      - 521
+      - 455
+    www.marmiton.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 959
+      - 1008
+      - 993
+      _speed_index:
+      - 794
+      - 877
+      - 860
+    www.meteociel.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 482
+      - 447
+      - 431
+      _speed_index:
+      - 425
+      - 369
+      - 399
+    www.meteofrance.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2402
+      - 2408
+      - 2312
+      _speed_index:
+      - 2199
+      - 2552
+      - 2331
+    www.microsoft.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1197
+      - 1037
+      - 1182
+      _speed_index:
+      - 5785
+      - 4920
+      - 5036
+    www.msn.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 919
+      - 3063
+      - 2896
+      _speed_index:
+      - 1834
+      - 2238
+      - 1791
+    www.netflix.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1308
+      - 1464
+      - 1741
+      _speed_index:
+      - 647
+      - 787
+      - 1067
+    www.news.google.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 433
+      - 443
+      - 432
+      _speed_index:
+      - 302
+      - 303
+      - 271
+    www.office.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1062
+      - 1093
+      - 983
+      _speed_index:
+      - 910
+      - 864
+      - 928
+    www.ohmymag.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 321
+      - 345
+      - 346
+      _speed_index:
+      - 783
+      - 763
+      - 853
+    www.orange.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 398
+      - 1942
+      - 342
+      _speed_index:
+      - 1313
+      - 1386
+      - 1288
+    www.ouest-france.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 989
+      - 1004
+      - 1026
+      _speed_index:
+      - 874
+      - 848
+      - 875
+    www.outbrain.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1034
+      - 1018
+      - 1045
+      _speed_index:
+      - 872
+      - 873
+      - 895
+    www.pagesjaunes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 914
+      - 982
+      - 956
+      _speed_index:
+      - 716
+      - 764
+      - 749
+    www.paypal.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1096
+      - 992
+      - 1059
+      _speed_index:
+      - 816
+      - 682
+      - 774
+    www.pinterest.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 526
+      - 548
+      - 525
+      _speed_index:
+      - 2452
+      - 2525
+      - 2421
+    www.pole-emploi.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 785
+      - 729
+      - 767
+      _speed_index:
+      - 913
+      - 900
+      - 913
+    www.pornhub.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 860
+      - 788
+      - 686
+      _speed_index:
+      - 915
+      - 743
+      - 664
+    www.programme-tv.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 570
+      - 626
+      - 542
+      _speed_index:
+      - 928
+      - 1001
+      - 928
+    www.purepeople.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 805
+      - 818
+      - 817
+      _speed_index:
+      - 285
+      - 285
+      - 285
+    www.qwant.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 527
+      - 538
+      - 582
+      _speed_index:
+      - 302
+      - 302
+      - 336
+    www.reddit.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 802
+      - 1344
+      - 1566
+      _speed_index:
+      - 562
+      - 622
+      - 872
+    www.seloger.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1024
+      - 954
+      - 979
+      _speed_index:
+      - 612
+      - 538
+      - 568
+    www.service-public.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 584
+      - 388
+      - 860
+      _speed_index:
+      - 463
+      - 417
+      - 558
+    www.sfr.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 391
+      - 408
+      - 382
+      _speed_index:
+      - 2228
+      - 2184
+      - 2151
+    www.sudouest.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1266
+      - 1336
+      - 1325
+      _speed_index:
+      - 463
+      - 508
+      - 492
+    www.taboola.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 605
+      - 767
+      - 492
+      _speed_index:
+      - 5547
+      - 5595
+      - 5503
+    www.tf1.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2476
+      - 2449
+      - 2481
+      _speed_index:
+      - 1386
+      - 1408
+      - 1358
+    www.twitch.tv: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2886
+      - 2892
+      - 2903
+      _speed_index:
+      - 2216
+      - 2122
+      - 2235
+    www.twitter.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1543
+      - 1576
+      - 1572
+      _speed_index:
+      - 1366
+      - 1420
+      - 1395
+    www.vinted.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2717
+      - 2825
+      - 2754
+      _speed_index:
+      - 2690
+      - 2773
+      - 2761
+    www.voici.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 635
+      - 562
+      - 534
+      _speed_index:
+      - 964
+      - 925
+      - 893
+    www.whatsapp.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 977
+      - 861
+      - 1016
+      _speed_index:
+      - 1022
+      - 878
+      - 1039
+    www.wikipedia.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 294
+      - 305
+      - 317
+      _speed_index:
+      - 310
+      - 277
+      - 310
+    www.wlp-acs.com: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.xhamster.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1786
+      - 1702
+      - 1732
+      _speed_index:
+      - 1136
+      - 1100
+      - 1147
+    www.xnxx.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 604
+      - 677
+      - 660
+      _speed_index:
+      - 470
+      - 506
+      - 508
+    www.xvideos.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 763
+      - 766
+      - 749
+      _speed_index:
+      - 453
+      - 479
+      - 462
+    www.yahoo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 623
+      - 589
+      - 604
+      _speed_index:
+      - 633
+      - 606
+      - 580
+    www.youporn.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 598
+      - 515
+      - 515
+      _speed_index:
+      - 697
+      - 640
+      - 626
+    www.youtu.be: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.youtube.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2382
+      - 2370
+      - 1418
+      _speed_index:
+      - 2387
+      - 2471
+      - 2452
+    www.zoom.us: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1490
+      - 1413
+      - 1509
+      _speed_index:
+      - 2337
+      - 2223
+      - 2311
+  _squid:
+    www.20minutes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1181
+      - 1219
+      - 1239
+      _speed_index:
+      - 951
+      - 1010
+      - 1022
+    www.actu.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 811
+      - 708
+      - 688
+      _speed_index:
+      - 680
+      - 708
+      - 644
+    www.aliexpress.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2177
+      - 2162
+      - 2272
+      _speed_index:
+      - 1813
+      - 1617
+      - 1696
+    www.allocine.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 568
+      - 517
+      - 499
+      _speed_index:
+      - 444
+      - 392
+      - 358
+    www.amazon.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1558
+      - 1582
+      - 1503
+      _speed_index:
+      - 1925
+      - 1921
+      - 1762
+    www.ameli.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 302
+      - 314
+      - 316
+      _speed_index:
+      - 575
+      - 599
+      - 606
+    www.bfmtv.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 887
+      - 924
+      - 917
+      _speed_index:
+      - 698
+      - 755
+      - 726
+    www.bing.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 211
+      - 264
+      - 190
+      _speed_index:
+      - 558
+      - 570
+      - 530
+    www.blogoman-24.com: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.bongacams.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1687
+      - 1707
+      - 1629
+      _speed_index:
+      - 703
+      - 613
+      - 579
+    www.boursorama.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1531
+      - 1302
+      - 1711
+      _speed_index:
+      - 1133
+      - 901
+      - 1337
+    www.bouyguestelecom.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1882
+      - 1750
+      - 1830
+      _speed_index:
+      - 1901
+      - 2312
+      - 2365
+    www.caf.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 589
+      - 581
+      - 576
+      _speed_index:
+      - 696
+      - 698
+      - 672
+    www.caisse-epargne.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1120
+      - 1192
+      - 1133
+      _speed_index:
+      - 1400
+      - 1496
+      - 1414
+    www.canalplus.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2284
+      - 913
+      - 1807
+      _speed_index:
+      - 2175
+      - 1610
+      - 2024
+    www.cdiscount.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2013
+      - 1815
+      - 1969
+      _speed_index:
+      - 1431
+      - 1362
+      - 1448
+    www.credit-agricole.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 872
+      - 882
+      - 888
+      _speed_index:
+      - 2048
+      - 1965
+      - 1963
+    www.creditmutuel.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 864
+      - 807
+      - 842
+      _speed_index:
+      - 1013
+      - 928
+      - 935
+    www.cuisineaz.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 684
+      - 717
+      - 664
+      _speed_index:
+      - 593
+      - 624
+      - 595
+    www.dealabs.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1085
+      - 1248
+      - 1171
+      _speed_index:
+      - 1181
+      - 1300
+      - 1261
+    www.doctissimo.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1141
+      - 1081
+      - 1054
+      _speed_index:
+      - 1031
+      - 1009
+      - 984
+    www.doctolib.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1263
+      - 1335
+      - 1568
+      _speed_index:
+      - 1272
+      - 1348
+      - 1565
+    www.duckduckgo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 697
+      - 609
+      - 604
+      _speed_index:
+      - 534
+      - 566
+      - 566
+    www.ebay.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1149
+      - 1053
+      - 1131
+      _speed_index:
+      - 3744
+      - 3653
+      - 3680
+    www.ecosia.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 629
+      - 620
+      - 624
+      _speed_index:
+      - 555
+      - 557
+      - 555
+    www.facebook.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 571
+      - 577
+      - 558
+      _speed_index:
+      - 514
+      - 514
+      - 578
+    www.femmeactuelle.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 475
+      - 450
+      - 360
+      _speed_index:
+      - 789
+      - 714
+      - 759
+    www.fnac.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 603
+      - 788
+      - 570
+      _speed_index:
+      - 866
+      - 1066
+      - 866
+    www.footmercato.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 862
+      - 532
+      - 515
+      _speed_index:
+      - 582
+      - 554
+      - 550
+    www.france.tv: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1090
+      - 965
+      - 1048
+      _speed_index:
+      - 1879
+      - 768
+      - 812
+    www.francetvinfo.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 871
+      - 843
+      - 783
+      _speed_index:
+      - 715
+      - 685
+      - 651
+    www.free.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 766
+      - 787
+      - 748
+      _speed_index:
+      - 594
+      - 631
+      - 604
+    www.gala.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 504
+      - 468
+      - 505
+      _speed_index:
+      - 866
+      - 838
+      - 822
+    www.google.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 381
+      - 372
+      - 360
+      _speed_index:
+      - 266
+      - 267
+      - 266
+    www.google.com.br: !!python/object:browsertime.Report
+      _page_load_time:
+      - 351
+      - 346
+      - 386
+      _speed_index:
+      - 233
+      - 267
+      - 267
+    www.google.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 364
+      - 386
+      - 373
+      _speed_index:
+      - 233
+      - 266
+      - 233
+    www.heureporno.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 145
+      - 155
+      - 152
+      _speed_index:
+      - 223
+      - 245
+      - 245
+    www.impots.gouv.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 275
+      - 277
+      - 274
+      _speed_index:
+      - 268
+      - 294
+      - 288
+    www.indeed.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 681
+      - 736
+      - 419
+      _speed_index:
+      - 720
+      - 779
+      - 739
+    www.index-education.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1111
+      - 1094
+      - 1113
+      _speed_index:
+      - 1097
+      - 1095
+      - 1101
+    www.instagram.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 894
+      - 860
+      - 912
+      _speed_index:
+      - 1384
+      - 1425
+      - 1388
+    www.interieur.gouv.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 683
+      - 672
+      - 645
+      _speed_index:
+      - 390
+      - 381
+      - 408
+    www.jeuxvideo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1227
+      - 1222
+      - 1211
+      _speed_index:
+      - 1023
+      - 988
+      - 959
+    www.journaldesfemmes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1119
+      - 1041
+      - 1186
+      _speed_index:
+      - 1018
+      - 1112
+      - 1067
+    www.labanquepostale.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 656
+      - 646
+      - 653
+      _speed_index:
+      - 583
+      - 599
+      - 600
+    www.ladepeche.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 794
+      - 822
+      - 876
+      _speed_index:
+      - 625
+      - 712
+      - 719
+    www.laposte.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1675
+      - 1454
+      - 1370
+      _speed_index:
+      - 1979
+      - 1786
+      - 1694
+    www.laposte.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1785
+      - 2150
+      - 1856
+      _speed_index:
+      - 2098
+      - 2061
+      - 1784
+    www.lci.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 861
+      - 574
+      - 667
+      _speed_index:
+      - 1951
+      - 1646
+      - 1575
+    www.leboncoin.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 4125
+      - 4118
+      - 3329
+      _speed_index:
+      - 2914
+      - 2751
+      - 1104
+    www.lefigaro.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1500
+      - 1525
+      - 1675
+      _speed_index:
+      - 832
+      - 905
+      - 1015
+    www.lemonde.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 746
+      - 774
+      - 650
+      _speed_index:
+      - 718
+      - 693
+      - 777
+    www.leparisien.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1692
+      - 1615
+      - 1626
+      _speed_index:
+      - 1313
+      - 1282
+      - 1297
+    www.lequipe.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1550
+      - 1605
+      - 1932
+      _speed_index:
+      - 662
+      - 637
+      - 662
+    www.leroymerlin.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 319
+      - 290
+      - 312
+      _speed_index:
+      - 566
+      - 568
+      - 600
+    www.linkedin.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 648
+      - 300
+      - 368
+      _speed_index:
+      - 735
+      - 0
+      - 0
+    www.linternaute.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1003
+      - 1251
+      - 997
+      _speed_index:
+      - 925
+      - 987
+      - 938
+    www.live.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1000
+      - 722
+      - 808
+      _speed_index:
+      - 802
+      - 646
+      - 646
+    www.marmiton.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 911
+      - 967
+      - 936
+      _speed_index:
+      - 790
+      - 814
+      - 823
+    www.meteociel.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 435
+      - 466
+      - 428
+      _speed_index:
+      - 350
+      - 350
+      - 502
+    www.meteofrance.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2247
+      - 2453
+      - 2405
+      _speed_index:
+      - 2299
+      - 2217
+      - 2498
+    www.microsoft.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1061
+      - 750
+      - 1869
+      _speed_index:
+      - 4868
+      - 4597
+      - 5716
+    www.msn.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 989
+      - 2966
+      - 3143
+      _speed_index:
+      - 1825
+      - 1847
+      - 2223
+    www.netflix.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1373
+      - 2281
+      - 1392
+      _speed_index:
+      - 682
+      - 1621
+      - 714
+    www.news.google.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 474
+      - 318
+      - 320
+      _speed_index:
+      - 336
+      - 302
+      - 271
+    www.office.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 950
+      - 919
+      - 932
+      _speed_index:
+      - 884
+      - 885
+      - 861
+    www.ohmymag.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 334
+      - 322
+      - 330
+      _speed_index:
+      - 785
+      - 817
+      - 760
+    www.orange.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 428
+      - 1853
+      - 409
+      _speed_index:
+      - 1366
+      - 1314
+      - 1335
+    www.ouest-france.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1032
+      - 1049
+      - 1061
+      _speed_index:
+      - 851
+      - 875
+      - 907
+    www.outbrain.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 934
+      - 981
+      - 1328
+      _speed_index:
+      - 834
+      - 805
+      - 1247
+    www.pagesjaunes.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 932
+      - 954
+      - 908
+      _speed_index:
+      - 717
+      - 729
+      - 731
+    www.paypal.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1129
+      - 1145
+      - 1124
+      _speed_index:
+      - 875
+      - 810
+      - 780
+    www.pinterest.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 527
+      - 508
+      - 554
+      _speed_index:
+      - 2501
+      - 2487
+      - 2446
+    www.pole-emploi.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 754
+      - 756
+      - 749
+      _speed_index:
+      - 903
+      - 944
+      - 912
+    www.pornhub.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 624
+      - 587
+      - 480
+      _speed_index:
+      - 681
+      - 658
+      - 586
+    www.programme-tv.net: !!python/object:browsertime.Report
+      _page_load_time:
+      - 573
+      - 579
+      - 536
+      _speed_index:
+      - 870
+      - 903
+      - 922
+    www.purepeople.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 827
+      - 803
+      - 784
+      _speed_index:
+      - 285
+      - 301
+      - 299
+    www.qwant.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 524
+      - 524
+      - 525
+      _speed_index:
+      - 269
+      - 301
+      - 243
+    www.reddit.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1463
+      - 1528
+      - 1759
+      _speed_index:
+      - 908
+      - 846
+      - 884
+    www.seloger.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1043
+      - 1008
+      - 971
+      _speed_index:
+      - 566
+      - 606
+      - 569
+    www.service-public.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 372
+      - 354
+      - 377
+      _speed_index:
+      - 386
+      - 363
+      - 375
+    www.sfr.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 385
+      - 400
+      - 403
+      _speed_index:
+      - 2163
+      - 2197
+      - 2173
+    www.sudouest.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1299
+      - 1350
+      - 1272
+      _speed_index:
+      - 520
+      - 501
+      - 496
+    www.taboola.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 711
+      - 741
+      - 855
+      _speed_index:
+      - 5586
+      - 5607
+      - 5842
+    www.tf1.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2473
+      - 2473
+      - 2452
+      _speed_index:
+      - 1413
+      - 1412
+      - 1389
+    www.twitch.tv: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2913
+      - 2841
+      - 2922
+      _speed_index:
+      - 2329
+      - 2118
+      - 2190
+    www.twitter.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1582
+      - 1597
+      - 1588
+      _speed_index:
+      - 1420
+      - 1459
+      - 1426
+    www.vinted.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2712
+      - 2777
+      - 2645
+      _speed_index:
+      - 2742
+      - 2752
+      - 2570
+    www.voici.fr: !!python/object:browsertime.Report
+      _page_load_time:
+      - 510
+      - 551
+      - 515
+      _speed_index:
+      - 920
+      - 973
+      - 893
+    www.whatsapp.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 914
+      - 848
+      - 943
+      _speed_index:
+      - 957
+      - 860
+      - 964
+    www.wikipedia.org: !!python/object:browsertime.Report
+      _page_load_time:
+      - 297
+      - 268
+      - 288
+      _speed_index:
+      - 300
+      - 300
+      - 300
+    www.wlp-acs.com: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.xhamster.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1921
+      - 1708
+      - 1680
+      _speed_index:
+      - 1392
+      - 1154
+      - 1120
+    www.xnxx.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 716
+      - 700
+      - 605
+      _speed_index:
+      - 444
+      - 472
+      - 474
+    www.xvideos.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 759
+      - 732
+      - 784
+      _speed_index:
+      - 463
+      - 443
+      - 461
+    www.yahoo.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 567
+      - 642
+      - 547
+      _speed_index:
+      - 547
+      - 666
+      - 540
+    www.youporn.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 441
+      - 460
+      - 557
+      _speed_index:
+      - 541
+      - 537
+      - 609
+    www.youtu.be: !!python/object:browsertime.Report
+      _page_load_time: []
+      _speed_index: []
+    www.youtube.com: !!python/object:browsertime.Report
+      _page_load_time:
+      - 2301
+      - 2386
+      - 1419
+      _speed_index:
+      - 2397
+      - 2447
+      - 2480
+    www.zoom.us: !!python/object:browsertime.Report
+      _page_load_time:
+      - 1384
+      - 1655
+      - 1379
+      _speed_index:
+      - 2200
+      - 2530
+      - 2203
+bulkTest: !!python/object:bulktest.BulkTest
+  _masquerade:
+  - 7238481
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  _native:
+  - 11917206
+  - 11908685
+  - 11908245
+  - 11905128
+  - 11909956
+  - 11906202
+  - 11905093
+  - 11905179
+  - 11909725
+  - 11909722
+  - 11902671
+  - 11908562
+  - 11904728
+  - 11905399
+  - 11908174
+  - 11908361
+  - 11902438
+  - 11909566
+  - 11905017
+  - 11908761
+  _squid:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+speedtest: !!python/object:speedtest.SpeedTest
+  _masquerade:
+  - city: "V\xE9lizy"
+    download_mbps: '95.91'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '96.61'
+    organization: Free
+    ping_ms: '9'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.19'
+  - city: Nanterre
+    download_mbps: '95.70'
+    organization: Free
+    ping_ms: '9'
+    server_ip: 88.174.40.84
+    sponsor: Telerys Communication
+    upload_mbps: '95.02'
+  - city: Meudon
+    download_mbps: '95.51'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '95.74'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.19'
+  - city: "V\xE9lizy"
+    download_mbps: '95.69'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '95.10'
+    organization: Free
+    ping_ms: '7'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.15'
+  - city: Massy
+    download_mbps: '96.44'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info BBR
+    upload_mbps: '95.33'
+  - city: Orly
+    download_mbps: '97.25'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.38'
+  - city: "V\xE9lizy"
+    download_mbps: '95.75'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.12'
+  - city: Orly
+    download_mbps: '96.83'
+    organization: Free
+    ping_ms: '7'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.40'
+  - city: Massy
+    download_mbps: '96.29'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info BBR
+    upload_mbps: '95.39'
+  - city: "V\xE9lizy"
+    download_mbps: '96.82'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.16'
+  - city: Orly
+    download_mbps: '96.51'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.41'
+  - city: Massy
+    download_mbps: '95.91'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info BBR
+    upload_mbps: '95.45'
+  - city: "V\xE9lizy"
+    download_mbps: '96.49'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.16'
+  - city: Massy
+    download_mbps: '95.91'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info BBR
+    upload_mbps: '95.45'
+  - city: Massy
+    download_mbps: '95.91'
+    organization: Free
+    ping_ms: '11'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info BBR
+    upload_mbps: '95.44'
+  - city: "V\xE9lizy"
+    download_mbps: '96.03'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '96.39'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.23'
+  _native:
+  - city: Orly
+    download_mbps: '96.77'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.40'
+  - city: Meudon
+    download_mbps: '96.98'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.19'
+  - city: "V\xE9lizy"
+    download_mbps: '96.39'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.15'
+  - city: "V\xE9lizy"
+    download_mbps: '95.77'
+    organization: Free
+    ping_ms: '9'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.16'
+  - city: Meudon
+    download_mbps: '95.78'
+    organization: Free
+    ping_ms: '7'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.19'
+  - city: "V\xE9lizy"
+    download_mbps: '95.86'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.21'
+  - city: "V\xE9lizy"
+    download_mbps: '95.77'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.23'
+  - city: "V\xE9lizy"
+    download_mbps: '95.80'
+    organization: Free
+    ping_ms: '9'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.17'
+  - city: "V\xE9lizy"
+    download_mbps: '95.85'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.15'
+  - city: "V\xE9lizy"
+    download_mbps: '95.74'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.19'
+  - city: Orly
+    download_mbps: '96.45'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.40'
+  - city: Meudon
+    download_mbps: '95.82'
+    organization: Free
+    ping_ms: '9'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.17'
+  - city: "V\xE9lizy"
+    download_mbps: '96.56'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.21'
+  - city: "V\xE9lizy"
+    download_mbps: '96.41'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: Orly
+    download_mbps: '96.25'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.36'
+  - city: Meudon
+    download_mbps: '95.91'
+    organization: Free
+    ping_ms: '7'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.28'
+  - city: "V\xE9lizy"
+    download_mbps: '95.92'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '98.02'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '96.48'
+    organization: Free
+    ping_ms: '7'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.17'
+  - city: Massy
+    download_mbps: '95.89'
+    organization: Free
+    ping_ms: '11'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info BBR
+    upload_mbps: '95.39'
+  _squid:
+  - city: "V\xE9lizy"
+    download_mbps: '95.99'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: ''
+    download_mbps: '95.51'
+    organization: ''
+    ping_ms: '9'
+    server_ip: ''
+    sponsor: ''
+    upload_mbps: '94.68'
+  - city: "V\xE9lizy"
+    download_mbps: '96.34'
+    organization: Free
+    ping_ms: '9'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.15'
+  - city: "V\xE9lizy"
+    download_mbps: '96.18'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.19'
+  - city: Orly
+    download_mbps: '96.29'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.40'
+  - city: Massy
+    download_mbps: '97.01'
+    organization: Free
+    ping_ms: '14'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info BBR
+    upload_mbps: '95.40'
+  - city: "V\xE9lizy"
+    download_mbps: '96.43'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.21'
+  - city: Meudon
+    download_mbps: '96.19'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.19'
+  - city: Meudon
+    download_mbps: '96.78'
+    organization: Free
+    ping_ms: '11'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.17'
+  - city: "V\xE9lizy"
+    download_mbps: '96.51'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.21'
+  - city: "V\xE9lizy"
+    download_mbps: '95.76'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.19'
+  - city: "V\xE9lizy"
+    download_mbps: '96.34'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.19'
+  - city: "V\xE9lizy"
+    download_mbps: '95.97'
+    organization: Free
+    ping_ms: '9'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.16'
+  - city: Orly
+    download_mbps: '97.58'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: LaFibre.info CUBIC
+    upload_mbps: '95.36'
+  - city: "V\xE9lizy"
+    download_mbps: '96.33'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '96.66'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: "V\xE9lizy"
+    download_mbps: '97.32'
+    organization: Free
+    ping_ms: '7'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.17'
+  - city: "V\xE9lizy"
+    download_mbps: '95.84'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM CUBIC
+    upload_mbps: '96.20'
+  - city: Meudon
+    download_mbps: '95.86'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.15'
+  - city: Meudon
+    download_mbps: '96.43'
+    organization: Free
+    ping_ms: '8'
+    server_ip: 88.174.40.84
+    sponsor: BOUYGUES TELECOM BBR
+    upload_mbps: '96.15'
