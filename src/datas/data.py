@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Ultraxime
 # @Last Modified by:   Ultraxime
-# @Last Modified time: 2023-08-18 16:20:16
+# @Last Modified time: 2023-09-06 08:23:56
 #
 # This file is part of Masquerade Data Analysis.
 #
@@ -50,6 +50,11 @@ from .base_data import BaseDataDependent
 from .base_data import BaseDataWebsiteDependent
 
 
+SCALES = ['linear']#,'log']
+EXTENSIONS = ['pdf']#, 'png']
+FONT_SIZE = 16
+
+
 class Data(BaseData):
     """
     This class describes a set of data.
@@ -71,7 +76,7 @@ class Data(BaseData):
                 try:
                     if not obj1 or not obj2:
                         return None
-                    return (fct(obj1, obj2), - (median(obj1)-median(obj2)) / median(obj1))
+                    return (fct(obj1, obj2), (median(obj2) - median(obj1)) / median(obj1))
                 except BaseException as err: # pylint: disable=W0718
                     info(f"While comparing the datas: {obj1} vs {obj2}, "
                          + f"the following occured:\n{err}")
@@ -136,7 +141,15 @@ class Data(BaseData):
 
         folder = f"graphs/{str(xlabel).split(' ', maxsplit=1)[0]}"
 
+        name = f"{folder}/{ylabel} depending on {xlabel} with {conditions}{aux}"
+        if self.empty:
+            warning(f"Issue while creating {name}, absence of datas")
+            return
         self.fillna(inplace=True)
+
+        info(f"{name} has on average {self.mean_length()} datapoints per box "
+             + f"with a min of {self.min_length()} and max of {self.max_length()}.")
+
         try:
             mkdir("graphs")
         except FileExistsError:
@@ -145,22 +158,52 @@ class Data(BaseData):
             mkdir(folder)
         except FileExistsError:
             pass
-        for scale in ("linear", "log"):
-            for extension in ("png", "svg"):
-                name = (f"{folder}/{ylabel} depending on {xlabel} "
-                        + f"with {conditions}{aux}({scale}).{extension}")
-                if self.empty:
-                    warning(f"Issue while creating {name}, absence of datas")
-                    return
+        for scale in SCALES:
+            for extension in EXTENSIONS:
+                tmp_name = f"{name}({scale}).{extension}"
                 try:
-                    fastplot.plot(data=self, path=name.replace(' ', '_'), mode="boxplot_multi",
+                    fastplot.plot(data=self, path=tmp_name.replace(' ', '_'), mode="boxplot_multi",
                                   xlabel=xlabel, ylabel=ylabel, yscale=scale,
-                                  legend=True, legend_ncol=3, figsize=(8, 4))
-                    debug(f"Saved plot: {name}")
+                                  legend=True, legend_ncol=3, figsize=(8, 4),
+                                  rcParams={'font.size': FONT_SIZE})
+                                  # style='latex',
+                                  # rcParams={'text.latex.preamble': r'\usepackage{libertine}'})
+                    debug(f"Saved plot: {tmp_name}")
                 except ValueError:
-                    exception(f"Issue while creating {name}, check what it was:\n{self}")
+                    exception(f"Issue while creating {tmp_name}, check what it was:\n{self}")
                 except TypeError:
-                    exception(f"Issue while creating {name}, check what it was:\n{self}")
+                    exception(f"Issue while creating {tmp_name}, check what it was:\n{self}")
+
+    def mean_length(self) -> float:
+        """
+        Get the average length of the list in the cells
+
+        :returns:   The average length
+        :rtype:     float
+        """
+        tmp_mean = self.applymap(len).mean()
+        assert isinstance(tmp_mean, Series)
+        new_mean = tmp_mean.mean()
+        assert isinstance(new_mean, float)
+        return new_mean
+
+    def min_length(self) -> int:
+        """
+        Get the minimum length of the list in the cells
+
+        :returns:   The minimum length
+        :rtype:     int
+        """
+        return self.applymap(len).min().min()
+
+    def max_length(self) -> int:
+        """
+        Get the maximum length of the list in the cells
+
+        :returns:   The maximum length
+        :rtype:     int
+        """
+        return self.applymap(len).max().max()
 
 class DataDependent(Data, BaseDataDependent):
     """

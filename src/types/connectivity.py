@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Ultraxime
 # @Last Modified by:   Ultraxime
-# @Last Modified time: 2023-08-18 13:19:18
+# @Last Modified time: 2023-09-06 08:21:55
 #
 # This file is part of Masquerade Data Analysis.
 #
@@ -30,13 +30,13 @@ class Connectivity:
 
     def __init__(self, technology: str, quality: str = "universal"):
         match technology:
-            case "leosat":
-                self._technology = 0
-            case "geosat":
-                self._technology = 1
             case "3g":
-                self._technology = 2
+                self._technology = 0
             case "4g":
+                self._technology = 1
+            case "leosat":
+                self._technology = 2
+            case "geosat":
                 self._technology = 3
             case _:
                 raise ValueError
@@ -71,20 +71,21 @@ class Connectivity:
     def __str__(self):
         match self._technology:
             case 0:
-                name = "leosat"
-            case 1:
-                name = "geosat"
-            case 2:
                 name = "3G"
-            case 3:
+            case 1:
                 name = "4G"
+            case 2:
+                name = "leosat"
+            case 3:
+                name = "geosat"
             case _:
                 raise ValueError
         match self._quality:
             case 0:
                 name += "\nbad"
             case 1:
-                name += "\nuniversal"
+                # name += "\nuniversal"
+                pass
             case 2:
                 name += "\nstarlink"
             case 3:

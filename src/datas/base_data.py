@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Ultraxime
 # @Last Modified by:   Ultraxime
-# @Last Modified time: 2023-08-18 18:00:44
+# @Last Modified time: 2023-08-25 14:19:33
 #
 # This file is part of Masquerade Data Analysis.
 #
@@ -58,14 +58,16 @@ class BaseData(DataFrame):
         """
         self.columns.name = name
 
-    def get_name(self) -> Hashable:
+    def get_name(self) -> Optional[str]:
         """
         Gets the name.
 
         :returns:   The name.
-        :rtype:     Hashable
+        :rtype:     str
         """
-        return self.columns.name
+        if self.columns.name is None:
+            return None
+        return str(self.columns.name)
 
     # pylint: disable=R0913
     def apply(self, func, axis=0, raw=False, result_type=None, args=(), **kwargs) -> Self:

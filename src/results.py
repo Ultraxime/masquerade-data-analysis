@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Ultraxime
 # @Last Modified by:   Ultraxime
-# @Last Modified time: 2023-08-18 18:34:23
+# @Last Modified time: 2023-08-28 16:52:14
 #
 # This file is part of Masquerade Data Analysis.
 #
@@ -30,6 +30,7 @@ from sqlite3 import OperationalError
 from typing import Dict
 from typing import Iterable
 from typing import List
+from typing import Optional
 from typing import Tuple
 from typing import Union
 
@@ -74,7 +75,7 @@ class Results:
                                     country TEXT
                                 )""")
         except OperationalError:
-            pass
+            debug("Table conditions already exists.")
 
         try:
             self._cursor.execute("""CREATE TABLE experiments(
@@ -86,7 +87,7 @@ class Results:
                                     FOREIGN KEY(condition) REFERENCES conditions(id)
                                 )""")
         except OperationalError:
-            pass
+            debug("Table experiments already exists.")
 
         for table, conf in CONFIG["tables"].items():
             columns = [f"{name} {typ}" for name, typ in conf["columns"].items()]
@@ -100,7 +101,7 @@ class Results:
             try:
                 self._cursor.execute(request)
             except OperationalError:
-                pass
+                debug(f"Table {table} already exists.")
 
         for country in scandir(folder):
             if country.is_dir():
@@ -149,7 +150,10 @@ class Results:
             data = yaml.load(file.read(), Loader=Loader)
 
         for table in CONFIG["tables"]:
-            self._insert(data[table], table, experiment_id[0])
+            try:
+                self._insert(data[table], table, experiment_id[0])
+            except KeyError:
+                info(f"Experiment {country}/{run}/{experiment} does not contains test {table}")
 
         self._connection.commit()
 
@@ -278,12 +282,15 @@ class Results:
                     info(f"Plotting: {CONFIG['metrics'][metric]['name']}")
                     self.plot_metric(metric, depending, country_dependent, website_dependent)
 
-    def print_analyse(self, country_dependent: bool = False, **kwargs) -> Dict[str, str]:
+    def print_analyse(self, country_dependent: bool = False,
+                      detailed: bool = False, **kwargs) -> Dict[str, str]:
         """
         Create the dict string corresponding to the analyse.
 
         :param      country_dependent:  The country dependent
         :type       country_dependent:  bool
+        :param      detailed:           Indicates if we print the error instead of the arrow
+        :type       detailed:           bool
         :param      kwargs:             The keywords arguments
         :type       kwargs:             dictionary
 
@@ -293,12 +300,14 @@ class Results:
         res = {}
         value, conditions = self.analyse(country_dependent, **kwargs)
         for depending, datas in value.items():
-            res[f"{depending} with {conditions[depending]}"] = str(datas)
+            # pylint: disable=C2801
+            res[f"{depending} with {conditions[depending]}"] = datas.__str__(detailed=detailed)
         return res
 
 
-    def analyse(self, country_dependent: bool = False, test_type: str = "all"
-                    ) -> Tuple[Dict[str, AnalysedData], Dict[str, str]]:
+    def analyse(self, country_dependent: bool = False, test_type: str = "all",
+                metrics: Optional[List[str]] = None
+               ) -> Tuple[Dict[str, AnalysedData], Dict[str, str]]:
         """
         Compare the different scenarios
 
@@ -319,12 +328,13 @@ class Results:
             else:
                 res[str(depending)] = AnalysedData()
             for metric in CONFIG['metrics']:
-                info(f"Analysing: {CONFIG['metrics'][metric]['name']}")
-                datas, conditions[str(depending)] = self.analyse_metric(metric,
-                                                                        depending,
-                                                                        country_dependent,
-                                                                        test_type)
-                res[str(depending)].insert(-1, CONFIG["metrics"][metric]["name_short"], datas)
+                if metrics is None or metric in metrics:
+                    info(f"Analysing: {CONFIG['metrics'][metric]['name']}")
+                    datas, conditions[str(depending)] = self.analyse_metric(metric,
+                                                                            depending,
+                                                                            country_dependent,
+                                                                            test_type)
+                    res[str(depending)].insert(-1, CONFIG["metrics"][metric]["name_short"], datas)
         return res, conditions
 
 
@@ -485,7 +495,7 @@ class Results:
             # Strengthening the datas,
             # to be sure that a website is counted the same number of time for every situation
             if mini == 0:
-                debug(f"Discarded website: {website} with data: {data[website]}")
+                # debug(f"Discarded website: {website} with data: {data[website]}")
                 del data[website]
             else:
                 for condition in experiments:

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Ultraxime
 # @Last Modified by:   Ultraxime
-# @Last Modified time: 2023-08-18 18:09:07
+# @Last Modified time: 2023-09-06 08:22:53
 #
 # This file is part of Masquerade Data Analysis.
 #
@@ -52,8 +52,8 @@ logging.basicConfig(**options)
 
 results = Results()
 
-# results.plot()
-# results.plot(country_dependent=True)
+results.plot()
+results.plot(country_dependent=True)
 # results.plot(full=True)
 
 
@@ -61,8 +61,28 @@ with open("full_analyse.tex", "w", encoding='utf-8') as file:
     for key, value in results.print_analyse().items():
         file.write(key)
         file.write(value)
-
-with open("country_dep_analyse.tex", "w", encoding='utf-8') as file:
-    for key, value in results.print_analyse(country_dependent=True).items():
+    for key, value in results.print_analyse(metrics=['plt', 'si'], detailed=True).items():
         file.write(key)
         file.write(value)
+
+# with open("country_dep_analyse.tex", "w", encoding='utf-8') as file:
+#     for key, value in results.print_analyse(country_dependent=True).items():
+#         file.write(key)
+#         file.write(value)
+
+# t_test, conditions = results.analyse(test_type='t-test')
+# mood, _ = results.analyse(test_type='mood')
+
+# for key, value in conditions.items():
+#     print(f"{key} with {value}")
+#     print(
+#         t_test[key].applymap(
+#             lambda x: [a[0] for a in x]
+#         ).get(
+#             ['SI', 'PLT']
+#         ).compare(
+#             mood[key].applymap(
+#                 lambda x: [a[0] for a in x]
+#             ).get(['SI', 'PLT'])
+#         )
+#     )

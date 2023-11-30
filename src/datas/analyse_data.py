@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author: Ultraxime
 # @Last Modified by:   Ultraxime
-# @Last Modified time: 2023-08-18 18:01:13
+# @Last Modified time: 2023-08-28 16:54:52
 #
 # This file is part of Masquerade Data Analysis.
 #
@@ -19,6 +19,7 @@
 """
 Module for the AnalysedData class
 """
+import re
 from collections.abc import Mapping
 from logging import warning
 from typing import Hashable
@@ -56,15 +57,15 @@ class AnalysedData(BaseData):
                             case "native against squid" | "it against de":
                                 res[0] = (test, err)
                             case "squid against native" | "de against it":
-                                res[0] = (test, 1 - (1 / (1 - err)) )
+                                res[0] = (test, - (err / (err + 1)))
                             case "native against masquerade" | "it against fr":
                                 res[1] = (test, err)
                             case "masquerade against native" | "fr against it":
-                                res[1] = (test, 1 - (1 / (1 - err)) )
+                                res[1] = (test, - (err / (err + 1)))
                             case "squid against masquerade" | "de against fr":
                                 res[2] = (test, err)
                             case "masquerade against squid" | "fr against de":
-                                res[2] = (test, 1 - (1 / (1 - err)) )
+                                res[2] = (test, - (err / (err + 1)))
                             case None:
                                 pass
                             case name:
@@ -77,7 +78,7 @@ class AnalysedData(BaseData):
         else:
             super().__init__(data, default, **kwargs)
 
-    def __str__(self, unit: Optional[str] = None) -> str:
+    def __str__(self, unit: Optional[str] = None, detailed: bool = False) -> str:
         def replace(cell):
             # pylint: disable=C0103
             up = "$\\nearrow$"
@@ -88,7 +89,10 @@ class AnalysedData(BaseData):
                     case None:
                         res += " & "
                     case (test, err):
-                        content = up if err > 0 else (down if err < 0 else "=")
+                        if detailed:
+                            content = f"${err*100:.2f}%$" if err != 0 else " "
+                        else:
+                            content = up if err > 0 else (down if err < 0 else "=")
                         if test:
                             res += f"\\cellcolor{{green}}{content} & "
                         else:
@@ -105,6 +109,13 @@ class AnalysedData(BaseData):
         styler.format_index(
             lambda name: f"\\multicolumn{{3}}{{c}}{{\\makecell{{{name.replace(' ', newline)}}}}}",
             axis="columns")
+        if unit is None:
+            name = self.get_name()
+            if name:
+                unit_tmp = re.search(r"\(.+\)", name)
+                if unit_tmp:
+                    unit = unit_tmp.group(0)[1:-1]
+
         if unit is not None:
             styler.format_index(lambda index: f"{index} ({unit})", axis='index')
         res = styler.to_latex(hrules=True)
